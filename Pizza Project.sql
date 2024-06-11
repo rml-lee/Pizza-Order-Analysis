@@ -1,6 +1,8 @@
 # Pizza Place Sales Analysis
 
 # Data Cleaning
+
+# Call Stored Procedure
 CALL clean_data();
 
 # -------------------------------------------------------------------------------------------------------------------
