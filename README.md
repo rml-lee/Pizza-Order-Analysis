@@ -46,4 +46,4 @@
 | ingredients   | Comma-delimited ingredients used in the pizza as shown in the menu (they all include Mozzarella Cheese, even if not specified; and they all include Tomato Sauce, unless another sauce is specified) |
 
 # Data Schema
-![Schema](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/985c4eb2-6232-4f78-9690-3517af54f601)
+<img src="https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/985c4eb2-6232-4f78-9690-3517af54f601" alt="Description" width="500"/>
