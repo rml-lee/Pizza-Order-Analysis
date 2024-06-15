@@ -171,10 +171,10 @@ WHERE
 
 
 
-
--- 8. What is the revenue share percentage of each pizza category?
+-- 8. What is the revenue and percentage distribution for each pizza category?
 SELECT
     category,
+    ROUND(SUM(d.quantity * p.price), 2) AS revenue,
     ROUND((SUM(d.quantity * p.price) / r.total_revenue) * 100, 0) AS rev_percentage
 FROM
     order_details d
@@ -184,7 +184,7 @@ FROM
     ON p.pizza_type_id = pt.pizza_type_id
     CROSS JOIN
             (SELECT
-                 ROUND(SUM(d.quantity * p.price), 0) AS total_revenue
+                 ROUND(SUM(d.quantity * p.price), 2) AS total_revenue
              FROM
                  order_details d
                  JOIN pizzas p
