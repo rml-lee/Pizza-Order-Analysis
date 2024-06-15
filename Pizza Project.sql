@@ -276,7 +276,7 @@ WHERE
 
 
 
--- 11. How many orders did we receive in the morning? How many orders did we receive in the Afternoon & Evening?
+-- 11. On November 3rd, how many orders did we receive in the morning? How many orders did we receive in the Afternoon & Evening?
 WITH morn_orders AS
          (SELECT
               order_id,
