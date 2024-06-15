@@ -141,7 +141,7 @@ GROUP BY 1;
 
 
 
--- 7. What are the top two busiest times of the day on average per week?
+-- 7. What are the two busiest times of the day on average each week?
 SELECT
     day_of_week,
     time_of_day,
