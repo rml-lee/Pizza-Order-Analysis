@@ -1,9 +1,14 @@
 # Summary/Findings
 
-## 5. What is the quarterly revenue generated from each size of 'The Greek Pizza'?
-![Highlight Map-2](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/8c18ecda-da98-4a9f-9642-a40d5e5249fb)
+
+## 4. What is the quarterly revenue generated from each size of 'The Greek Pizza'?
+![Highlight Map](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/5b4dfd5b-f563-49b2-8caa-6a5ad285387a)
 
 
+## 7. What are the top two busiest times of the day on average per week?
+![Grouped Bar Chart](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/547d406b-eb74-4b49-9ea5-7712af504a39)
 
-## 6. Return a summary of revenue generated for every pizza type sold on July 6th.
-![Text Table](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/8829f251-c74a-4278-b8bd-782110c5b6d0)
+
+## 8. What is the revenue and percentage distribution for each pizza category?
+![Pie Chart](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/65c7307d-b787-4eea-8e05-3db349d0e63b)
+
