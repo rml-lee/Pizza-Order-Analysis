@@ -50,7 +50,7 @@ ORDER BY 1 ASC;
 
 
 -- 2. Which customers (order_id) ordered at least 3 different pizza types in a single order during the month of June?
-SELECT DISTINCT
+SELECT
     o.order_id
 FROM
     orders o
@@ -85,7 +85,7 @@ FROM
 SELECT
     QUARTER(timestamp) AS quarter,
     size,
-    ROUND(SUM(quantity * price), 0) AS total_revenue
+    ROUND(SUM(quantity * price), 2) AS total_revenue
 FROM
     orders o
     JOIN order_details od
