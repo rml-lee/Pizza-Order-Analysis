@@ -81,7 +81,7 @@ FROM
 
 
 
--- 4. What is the quarterly revenue generated from each size of "The Greek Pizza"?
+-- 4. What is the quarterly revenue generated from each size of 'The Greek Pizza'?
 SELECT
     QUARTER(timestamp) AS quarter,
     size,
