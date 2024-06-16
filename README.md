@@ -3,12 +3,15 @@
 # Business Task
 
 ## Table of Contents
-- [Orders Table](#orders-table)
-- [Order Details Table](#order-details-table)
-- [Pizzas Table](#pizzas-table)
-- [Pizza Types Table](#pizza-types-table)
+- [Data Source](#data-source)
+- [Data Dictionary](#data-dictionary)
+- [Data Cleaning](#data-cleaning)
+- [Data Schema](#data-schema)
+- [Data Transformation](#data-transformation)
+- [Analysis/Findings](#analysisfindings)
 
 # Data Source
+Pizza Place Sales - [Kaggle](https://www.kaggle.com/datasets/mysarahmadbhat/pizza-place-sales?select=order_details.csv)
 
 # Data Dictionary
 
@@ -49,15 +52,15 @@
 
 
 # Data Cleaning
-Effective data analysis begins with ensuring the data is clean and well-structured. In this section, we outline the steps taken to clean the dataset, removing inconsistencies, correcting errors, and ensuring the integrity of the data.
+Effective data analysis begins with ensuring the data is clean and well-structured.
 
-To facilitate this process, i've have provided a SQL script that performs the necessary data cleaning operations. The script is a stored procedure. By running this script, the dataset is prepared for accurate and reliable analysis.
+To facilitate this process, i've provided a SQL script that performs the necessary data cleaning operations. The script is a stored procedure. By running this script, the dataset is prepared for accurate and reliable analysis. The procedure will be called during the Data Transformation phase of this project.
 
-You can access the SQL file for data cleaning here.
+You can access the SQL file for data cleaning [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Data%20Cleaning%20-%20Stored%20Procedure.sql).
 
 # Data Schema
 <img src="https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/985c4eb2-6232-4f78-9690-3517af54f601" alt="Description" width="500"/>
 
-# Data Analysis
+# Data Transformation
 
-# Summary/Findings
+# Analysis/Findings
