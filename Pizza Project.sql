@@ -1,32 +1,5 @@
 # Pizza Place Sales Analysis
 
-# Data Cleaning
-
-# Call Stored Procedure
-
-CALL clean_data();
-
-# -------------------------------------------------------------------------------------------------------------------
-
-# Descriptive Statistics
-
-# Date Range
-SELECT DISTINCT
-    DATE(timestamp) AS date_list
-FROM
-    orders;
--- Result: Covers the entire year of 2015
-
-
-# List of Pizza Categories.
-SELECT DISTINCT
-    category
-FROM
-    pizza_types;
-
-# ------------------------------------------------------------------------------------------------------------------
-
-# Data Analysis
 
 -- 1. What are the volume of orders received daily from pizzas that contained mushrooms and tomatoes as part of their toppings in January?
 SELECT
