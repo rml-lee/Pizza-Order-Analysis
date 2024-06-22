@@ -272,12 +272,3 @@ FROM
 WHERE
     DATE(o.timestamp) = '2015-11-03'
 GROUP BY 1;
-
-
-
-
-
-
-
-
-
