@@ -87,4 +87,4 @@ Tools used:
 
 To conclude, I've provided an analysis of the results from a few of the questions provided within the SQL file. This section will also include visuals for our data and discussing the implications and potential impact on the business or research problem at hand. The goal is to provide a thorough and actionable understanding of the data, guiding informed decision-making.
 
-You can review the results [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Summary-Findings.md#summaryfindings)
+You can review the results [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Summary-Findings.md#summaryfindings).
