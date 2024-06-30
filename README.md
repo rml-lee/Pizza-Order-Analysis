@@ -65,6 +65,7 @@ You can access the Jupyter Notebook file [here]().
 # Data Schema
 
 After cleaning the data, this is our schema that will be used throughout this project.
+
 <img src="https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/985c4eb2-6232-4f78-9690-3517af54f601" alt="Description" width="500"/>
 
 # Data Transformation
