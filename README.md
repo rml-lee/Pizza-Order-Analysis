@@ -75,7 +75,9 @@ Tools used:
 | ----- |
 | <img src="https://github.com/rml-lee/MYSQL-Tableau-Video-Games-Project/assets/160198611/a1f80d2c-f675-4c97-b497-f21377fd0042" width="55" height="55"/> |
 
-The provided SQL script contains a set of questions with queries used to gather insight about this dataset using MySQL. You can access the SQL file [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Pizza%20Project.sql).
+The provided SQL script contains a set of questions with queries used to gather insight about this dataset using MySQL. 
+
+You can access the SQL file [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Pizza%20Project.sql).
 
 # Analysis/Findings
 
