@@ -3,6 +3,8 @@
 # Business Task
 The goal of this project is to gather actionable insights and identify trends from the provided dataset of a fictitious pizza place.
 
+**Domain**: Food Service and Hospitality
+
 ## Table of Contents
 - [Data Source](#data-source)
 - [Data Dictionary](#data-dictionary)
