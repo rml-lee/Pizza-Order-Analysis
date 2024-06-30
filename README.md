@@ -1,6 +1,6 @@
 # MYSQL-Tableau-Pizza-Project
 
-# Business Task
+# Business Objective
 The goal of this project is to gather actionable insights and identify trends from the provided pizza dataset of a fictitious pizza place.
 
 ## Table of Contents
