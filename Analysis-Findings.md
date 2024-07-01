@@ -7,13 +7,11 @@ Tableau - [Link](https://public.tableau.com/views/Workbook3PizzaProject_17182090
 
 ![Highlight Map](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/5b4dfd5b-f563-49b2-8caa-6a5ad285387a)
 
-- The Greek Pizza is available in five different sizes, up to XXL, offering the widest range of pizza sizes on the entire menu. 
-
-- Q2 saw the largest revenue generated for the XL version of the Greek Pizza. When evaluating the performance of the different sizes, the XL version has been the most successful in generating consistent revenue throughout 2015.
+- The Greek Pizza is available in five different sizes, up to XXL, offering the widest range of pizza sizes on the entire menu. Q2 saw the largest revenue generated for the XL version of the Greek Pizza. When evaluating the performance of the different sizes, the XL version has been the most successful in generating consistent revenue throughout 2015.
 
 - The XXL version generated the least amount of revenue among all pizza sizes throughout 2015, with the lowest revenue occurring in the third quarter.
 
-- Recommendations: Offer more deals and provide unique advertising for the XXL version of The Greek Pizza. If this pizza isn’t generating net profit, consider discontinuing this size in order to save money.
+- Recommendations: Offer more deals and provide unique advertising for the XXL version of The Greek Pizza. If this pizza size remains unprofitable, consider discontinuing it.
 
 
 ## 7. What are the two busiest times of the day on average each week?
