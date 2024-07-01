@@ -33,5 +33,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook3PizzaProject_17182090
 
 - The revenue distribution among pizza categories are roughly even with Classic style pizzas being on top end of revenue and Veggie pizzas being on the bottom end. Each category is equally popular among customers, suggesting a diverse customer base with varied tastes and preferences.
 
-- Recommendations: Regularly gather customer feedback and monitor market trends to understand evolving preferences. Adjust the menu and utilize marketing strategies accordingly to maintain appeal across all categories. Ensure consistent quality across all pizza categories. Regularly review and improve recipes, ingredients, and cooking methods to maintain high standards.
+- Recommendations: Regularly gather customer feedback and monitor market trends to understand evolving preferences.
+- Adjust the menu and utilize marketing strategies accordingly to maintain appeal across all categories.
+- Ensure consistent quality across all pizza categories. Regularly review and improve recipes, ingredients, and cooking methods to maintain high standards.
 
