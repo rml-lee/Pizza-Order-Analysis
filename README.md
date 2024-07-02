@@ -11,7 +11,7 @@ The goal of this project is to gather actionable insights and identify trends fr
 - [Data Cleaning & Exploration](#data-cleaning--Exploration)
 - [Data Schema](#data-schema)
 - [Data Transformation](#data-transformation)
-- [Analysis & Findings](#analysis--findings)
+- [Findings & Analysis](#findings--analysis)
 
 # Data Source
 Pizza Place Sales - [Kaggle](https://www.kaggle.com/datasets/mysarahmadbhat/pizza-place-sales?select=order_details.csv)
@@ -82,7 +82,7 @@ The provided SQL script contains a set of questions with queries used to gather 
 
 You can access the SQL file [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Pizza%20Project.sql).
 
-# Analysis & Findings
+# Findings & Analysis
 
 Tools used:
 | Tableau |
@@ -92,4 +92,4 @@ Tools used:
 
 To conclude, I've provided an analysis of the results from a few of the questions provided within the SQL file. This section will also include visuals for our data and discussing the implications and potential impact on the business or research problem at hand. The goal is to provide a thorough and actionable understanding of the data, guiding informed decision-making.
 
-You can review the results [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Analysis-Findings.md).
+You can review the results [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Findings-Analysis.md).
