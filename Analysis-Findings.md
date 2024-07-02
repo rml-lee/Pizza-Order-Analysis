@@ -1,4 +1,4 @@
-# Analysis/Findings
+# Analysis & Findings
 
 
 ## 4. What is the quarterly revenue generated from each size of 'The Greek Pizza'?
