@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MYSQL-Tableau-Pizza-Project.iml" filepath="$PROJECT_DIR$/.idea/MYSQL-Tableau-Pizza-Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pizza-Order-Analysis.iml" filepath="$PROJECT_DIR$/.idea/Pizza-Order-Analysis.iml" />
     </modules>
   </component>
 </project>
