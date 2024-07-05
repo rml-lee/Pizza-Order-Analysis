@@ -63,7 +63,7 @@ Tools used:
 
 In this section, you'll find a Jupyter Notebook that demonstrates my proficiency in data cleaning and exploration using pandas. This notebook showcases various techniques to clean and preprocess raw data, ensuring that it's ready for analysis.
 
-You can access the Jupyter Notebook file [here](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/blob/main/Data%20Cleaning%20%26%20Exploration%20-%20Pizza%20Project.ipynb).
+You can access the Jupyter Notebook file [here](https://github.com/rml-lee/Pizza-Order-Analysis/blob/main/Data%20Cleaning%20%26%20Exploration%20-%20Pizza%20Orders.ipynb).
 
 # Data Schema
 
