@@ -73,7 +73,6 @@ ORDER BY 1 ASC, 2 ASC;
 
 
 -- 5. Return a summary of revenue generated for every pizza type sold on July 6th.
--- In case a certain pizza didn't sell, include it in the results as 0.
 SELECT
     pt.name,
     COALESCE(n_of_orders, 0) AS n_of_orders,
