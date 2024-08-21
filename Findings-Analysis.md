@@ -1,6 +1,8 @@
-# Findings & Analysis
+<h1 align="center">Findings & Analysis</h1>
 
-**Note**: Click the Tableau link above a chart to view a detailed, interactive version.
+
+
+<p align="center">Note: Click the Tableau link above a chart to view a detailed, interactive version.</p> 
 
 ## 4. What is the quarterly revenue generated from each size of 'The Greek Pizza'?
 
