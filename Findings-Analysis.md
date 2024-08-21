@@ -1,5 +1,6 @@
 # Findings & Analysis
 
+**Note**: Click the Tableau link above each chart to view a detailed, interactive version.
 
 ## 4. What is the quarterly revenue generated from each size of 'The Greek Pizza'?
 
