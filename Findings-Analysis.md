@@ -23,7 +23,9 @@ Tableau - [Link](https://public.tableau.com/views/Workbook3PizzaProject_17182090
 
 ![Grouped Bar Chart](https://github.com/rml-lee/MYSQL-Tableau-Pizza-Project/assets/160198611/547d406b-eb74-4b49-9ea5-7712af504a39)
 
-- On average, **Friday and Saturday late afternoons** receive the **highest** amount of order traffic during business hours. This is due to people being off from work during the end of the week. Pizza also tends to be a popular choice for events, celebrations, gathering, festivities, or functions that occur during the weekends.
+- On average, **Friday and Saturday late afternoons** receive the **highest** amount of order traffic during business hours.
+
+- This is due to people being off from work during the end of the week. Pizza also tends to be a popular choice for events, celebrations, gathering, festivities, or functions that occur during the weekends.
 
 - **Recommendations**: Adjust staff accordingly for late afternoons on Fridays and Saturdays to effectively manage anticipated traffic.
 
