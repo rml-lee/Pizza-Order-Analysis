@@ -27,7 +27,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook3PizzaProject_17182090
 
 - This is due to people being off from work during the end of the week. Pizza also tends to be a popular choice for events, celebrations, gathering, festivities, or functions that occur during the weekends.
 
-- **Recommendations**: Adjust staff accordingly for late afternoons on Fridays and Saturdays to effectively manage anticipated traffic.
+- **Recommendation**: Adjust staff accordingly for late afternoons on Fridays and Saturdays to effectively manage anticipated traffic.
 
 
 ## 8. What is the revenue and percentage distribution for each pizza category?
