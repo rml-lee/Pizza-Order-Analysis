@@ -2,6 +2,5 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Pizza Project.sql" dialect="MySQL" />
-    <file url="file://$USER_HOME$/Downloads/MYSQL Notes/# My Personal Query Notes.sql" dialect="MySQL" />
   </component>
 </project>

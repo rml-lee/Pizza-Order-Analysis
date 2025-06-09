@@ -1,7 +1,7 @@
 # Pizza Place Sales Analysis
 
 
--- 1. What are the volume of orders received daily from pizzas that contained mushrooms and tomatoes as part of their toppings in January?
+-- 1. What was the daily volume of orders for pizzas with mushrooms and tomatoes as toppings in January?
 SELECT
     DAY(timestamp) AS day,
     COUNT(DISTINCT o.order_id) AS total_orders
@@ -167,8 +167,10 @@ GROUP BY 1;
 
 
 
--- 9. Compare the sales (in percentage) of pizzas on May 22 and June 22. Which pizzas had an increase in sales from May to June?
+-- 9. Compare the sales (in percentage) of pizzas on May 22 and June 22. Which pizzas had an increase in sales?
+
 WITH main AS
+    -- Gets records of orders that occurred during May 22 and June 22
          (SELECT
               timestamp,
               pizza_type_id,
@@ -185,6 +187,7 @@ WITH main AS
               DATE(timestamp) IN ('2015-05-22', '2015-06-22')),
 
      may_revenue AS
+         -- Returns revenue earned during May 22
          (SELECT
               pizza_type_id,
               ROUND(SUM(quantity * price), 2) AS may_rev
@@ -195,6 +198,7 @@ WITH main AS
           GROUP BY 1),
 
     jun_revenue AS
+        -- Returns revenue earned during June 22
         (SELECT
             pizza_type_id,
             ROUND(SUM(quantity * price), 2) AS jun_rev
@@ -205,6 +209,7 @@ WITH main AS
         GROUP BY 1),
 
     summary AS
+        -- Calculates the percentage variance in sales revenue
         (SELECT
             m.pizza_type_id,
             ROUND(((jun_rev - may_rev) / may_rev) * 100, 0) AS sales_variance
@@ -212,9 +217,11 @@ WITH main AS
             may_revenue m
             JOIN jun_revenue j
             ON j.pizza_type_id = m.pizza_type_id)
+
 SELECT
-    name,
-    sales_variance
+    -- Returns the name of pizzas that showed an increase in sales revenue from May 22 to June 22
+    pt.name,
+    s.sales_variance
 FROM
     summary s
     JOIN pizza_types pt
@@ -235,6 +242,7 @@ WITH morn_orders AS
           WHERE
                 DATE(timestamp) = '2015-11-03'
             AND EXTRACT(HOUR FROM timestamp) < 12)
+
 SELECT
     o.order_id,
     o.timestamp AS post_morning_timestamp
@@ -258,6 +266,7 @@ WITH morn_orders AS
           WHERE
                 DATE(timestamp) = '2015-11-03'
             AND EXTRACT(HOUR FROM timestamp) < 12)
+
 SELECT
     CASE
         WHEN mo.timestamp IS NOT NULL THEN 'Morning'
