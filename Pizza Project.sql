@@ -170,7 +170,7 @@ GROUP BY 1;
 -- 9. Compare the sales (in percentage) of pizzas on May 22 and June 22. Which pizzas had an increase in sales?
 
 WITH main AS
-    -- Gets records of orders that occurred during May 22 and June 22
+    -- Fetches orders placed on May 22 and June 22
          (SELECT
               timestamp,
               pizza_type_id,
