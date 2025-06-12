@@ -117,29 +117,22 @@ GROUP BY 1;
 SELECT
     day_of_week,
     time_of_day,
-    avg_total_orders
+    ROUND(AVG(total_orders), 0) AS avg_total_orders
 FROM
     (SELECT
-         day_of_week,
-         time_of_day,
-         ROUND(AVG(total_orders), 0) AS avg_total_orders,
-         DENSE_RANK() OVER (ORDER BY ROUND(AVG(total_orders), 0) DESC) AS rnk
-     FROM
-         (SELECT
-              WEEK(timestamp) AS week,
-              DAYNAME(timestamp) AS day_of_week,
-              CASE
-                  WHEN EXTRACT(HOUR FROM timestamp) < 12 THEN 'Morning'
-                  WHEN EXTRACT(HOUR FROM timestamp) BETWEEN 12 AND 15 THEN 'Early Afternoon'
-                  WHEN EXTRACT(HOUR FROM timestamp) > 15 THEN 'Late Afternoon'
-              END AS time_of_day,
-              COUNT(*) AS total_orders
-          FROM
-              orders
-          GROUP BY 1, 2, 3) t
-     GROUP BY 1, 2) t2
-WHERE
-    rnk <= 2;
+        WEEK(timestamp) AS week,
+        DAYNAME(timestamp) AS day_of_week,
+        CASE
+            WHEN EXTRACT(HOUR FROM timestamp) < 12 THEN 'Morning'
+            WHEN EXTRACT(HOUR FROM timestamp) BETWEEN 12 AND 15 THEN 'Early Afternoon'
+            WHEN EXTRACT(HOUR FROM timestamp) > 15 THEN 'Late Afternoon'
+        END AS time_of_day,
+        COUNT(*) AS total_orders
+    FROM
+        orders
+    GROUP BY 1, 2, 3) o
+GROUP BY 1, 2
+ORDER BY 3 DESC;
 
 
 
