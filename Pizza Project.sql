@@ -162,54 +162,58 @@ GROUP BY 1;
 
 -- 9. Compare the sales (in percentage) of pizzas on May 22 and June 22. Which pizzas had an increase in sales?
 
-WITH main AS
+WITH main AS (
     -- Fetches orders placed on May 22 and June 22
-         (SELECT
-              timestamp,
-              pizza_type_id,
-              o.order_id,
-              quantity,
-              price
-          FROM
-              orders o
-              JOIN order_details od
-              ON o.order_id = od.order_id
-              JOIN pizzas p
-              ON p.pizza_id = od.pizza_id
-          WHERE
-              DATE(timestamp) IN ('2015-05-22', '2015-06-22')),
+    SELECT
+        timestamp,
+        pizza_type_id,
+        o.order_id,
+        quantity,
+        price
+    FROM
+        orders o
+        JOIN order_details od
+        ON o.order_id = od.order_id
+        JOIN pizzas p
+        ON p.pizza_id = od.pizza_id
+    WHERE
+        DATE(timestamp) IN ('2015-05-22', '2015-06-22')
+),
 
-     may_revenue AS
-         -- Returns revenue earned during May 22
-         (SELECT
-              pizza_type_id,
-              ROUND(SUM(quantity * price), 2) AS may_rev
-          FROM
-              main
-          WHERE
-              MONTH(timestamp) = 05
-          GROUP BY 1),
+may_revenue AS (
+    -- Returns revenue earned during May 22
+    SELECT
+        pizza_type_id,
+        ROUND(SUM(quantity * price), 2) AS may_rev
+    FROM
+        main
+    WHERE
+        MONTH(timestamp) = 05
+    GROUP BY 1
+),
 
-    jun_revenue AS
-        -- Returns revenue earned during June 22
-        (SELECT
-            pizza_type_id,
-            ROUND(SUM(quantity * price), 2) AS jun_rev
-        FROM
-            main
-        WHERE
-            MONTH(timestamp) = 06
-        GROUP BY 1),
+jun_revenue AS (
+    -- Returns revenue earned during June 22
+    SELECT
+        pizza_type_id,
+        ROUND(SUM(quantity * price), 2) AS jun_rev
+    FROM
+        main
+    WHERE
+        MONTH(timestamp) = 06
+    GROUP BY 1
+),
 
-    summary AS
-        -- Calculates the percentage variance in sales revenue
-        (SELECT
-            m.pizza_type_id,
-            ROUND(((jun_rev - may_rev) / may_rev) * 100, 0) AS sales_variance
-        FROM
-            may_revenue m
-            JOIN jun_revenue j
-            ON j.pizza_type_id = m.pizza_type_id)
+summary AS (
+    -- Calculates the percentage variance in sales revenue
+    SELECT
+        m.pizza_type_id,
+        ROUND(((jun_rev - may_rev) / may_rev) * 100, 0) AS sales_variance
+    FROM
+        may_revenue m
+        JOIN jun_revenue j
+        ON j.pizza_type_id = m.pizza_type_id
+)
 
 SELECT
     -- Returns the name of pizzas that showed an increase in sales revenue from May 22 to June 22
@@ -226,15 +230,16 @@ ORDER BY 2 DESC;
 
 
 -- 10. What are the order id's of orders that were made after 12pm on November 3rd?
-WITH morn_orders AS
-         (SELECT
-              order_id,
-              timestamp
-          FROM
-              orders
-          WHERE
-                DATE(timestamp) = '2015-11-03'
-            AND EXTRACT(HOUR FROM timestamp) < 12)
+WITH morn_orders AS (
+    SELECT
+        order_id,
+        timestamp
+    FROM
+        orders
+    WHERE
+        DATE(timestamp) = '2015-11-03'
+    AND EXTRACT(HOUR FROM timestamp) < 12
+)
 
 SELECT
     o.order_id,
@@ -250,15 +255,16 @@ WHERE
 
 
 -- 11. On November 3rd, how many orders did we receive in the morning? How many orders did we receive in the Afternoon & Evening?
-WITH morn_orders AS
-         (SELECT
-              order_id,
-              timestamp
-          FROM
-              orders
-          WHERE
-                DATE(timestamp) = '2015-11-03'
-            AND EXTRACT(HOUR FROM timestamp) < 12)
+WITH morn_orders AS (
+    SELECT
+        order_id,
+        timestamp
+    FROM
+        orders
+    WHERE
+        DATE(timestamp) = '2015-11-03'
+    AND EXTRACT(HOUR FROM timestamp) < 12
+)
 
 SELECT
     CASE
