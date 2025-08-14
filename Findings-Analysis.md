@@ -20,6 +20,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook3PizzaProject_17182090
 
   - Offer more deals and provide unique advertising for the XXL version of The Greek Pizza. If this pizza size remains unprofitable, consider discontinuing it.
 
+---
 
 ## 7. What are the two busiest times of the day on average each week?
 
@@ -37,6 +38,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook3PizzaProject_17182090
 
   - Adjust staff accordingly for late afternoons on Fridays and Saturdays to effectively manage anticipated traffic.
 
+---
 
 ## 8. What is the revenue and percentage distribution for each pizza category?
 
