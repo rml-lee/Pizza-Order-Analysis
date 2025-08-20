@@ -1,7 +1,7 @@
 # Pizza Order Analysis
 
 # Business Objective
-This analysis will gather actionable insights and identify trends from the provided pizza place dataset, taking a deeper dive into sales patterns and key performance drivers. The goal is to pinpoint opportunities for increased efficiency and revenue by examining the performance of pizza categories and sizes, as well as peak ordering times. This will enable data-driven strategies to optimize ingredient inventory, staff scheduling, and targeted marketing for improved profitability.
+This analysis will gather actionable insights and identify trends from the provided pizza place dataset, specifically looking into sales patterns and key performance drivers. The goal is to pinpoint opportunities for increased efficiency and revenue by examining the performance of pizza categories and sizes, as well as peak ordering times. This will enable data-driven strategies to optimize ingredient inventory, staff scheduling, and targeted marketing for improved profitability.
 
 
 # Table of Contents
