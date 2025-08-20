@@ -1,11 +1,10 @@
 # Pizza Order Analysis
 
-# Business Task
-The goal of this project is to gather actionable insights and identify trends from the provided dataset of a fictitious pizza place.
+# Business Objective
+This analysis will gather actionable insights and identify trends from the provided pizza place dataset, taking a deeper dive into sales patterns and key performance drivers. The goal is to pinpoint opportunities for increased efficiency and revenue by examining the performance of pizza categories and sizes, as well as peak ordering times. This will enable data-driven strategies to optimize ingredient inventory, staff scheduling, and targeted marketing for improved profitability.
 
-**Domain**: Food Service and Hospitality
 
-## Table of Contents
+# Table of Contents
 - [**Data Source**](#data-source)
 - [**Data Dictionary**](#data-dictionary)
 - [**Data Cleaning & Exploration**](#data-cleaning--Exploration)
